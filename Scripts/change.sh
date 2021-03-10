@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sudo service nginx restart
 cd /
 cd /var/www/public_html
 
