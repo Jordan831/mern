@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/public_html 
+permissions:
+  - object: /var/www/public_html
+    pattern: '**'
+    mode: '0777'
+    owner: root
+    group: root
+    type:
+      - file
+      - directory 
+hooks:
+  BeforeInstall:
+    - location: Scripts/del.sh  
+  ApplicationStart:
+    - location: Scripts/change.sh   
+
+

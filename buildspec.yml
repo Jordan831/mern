@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm install
+
+artifacts:
+  files:
+   - '**/*'
+   - dist/**/*
+   - node_modules/**/*
+   - Scripts/**/*
+   
+cache:
+  paths:
+    - './node_modules/**/*'
