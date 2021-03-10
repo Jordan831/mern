@@ -1,20 +1,12 @@
 version: 0.2
 
-phases:
-  install:
-    commands:
-      - npm install
-  pre_build:
-    commands:
-      - npm install
-  post_build:
-    commands:
-      - npm install
-      - cd client && npm install
+phases:    
   build:
     commands:
       - npm install
-
+      - cd client 
+      - npm install
+  
 artifacts:
   files:
    - '**/*'
