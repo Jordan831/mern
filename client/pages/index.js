@@ -1,6 +1,6 @@
 const Index =()=>{
 
-    return(<div>Dooooooooon</div>)
+    return(<div>doing</div>)
 }
 
 export default Index;
